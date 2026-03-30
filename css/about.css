@@ -1,3 +1,69 @@
 .about{
-    color: skyblue;
+    padding: 100px 0;
+}
+/* 상단 */
+.about-top{
+    display: flex;
+    justify-content: space-between;
+}
+/* 왼쪽 텍스트 */
+.about-txt h3{
+    margin-bottom: 40px;
+    font-size: 44px;
+    color: #111;
+}
+.txt-sub{
+    position: relative;
+    padding-left: 100px;
+}
+.txt-sub::after{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 37px;
+    height: 5px;
+    background: #ed1c24;
+}
+.txt-sub p:first-child{
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.txt-sub p:last-child{
+    font-size: 15px;
+    color: #444;
+}
+/* 회사소개 하단 */
+.about-bottom{
+    padding-top: 100px;
+}
+.about-icon{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.about-icon li a{
+    display: block;
+    width: 103px;
+    height: 108px;
+    background: url(../img/bg_icon.png) no-repeat;
+}
+.about-icon li:nth-child(1) a{
+    background-position: 0px 0px;
+}
+.about-icon li:nth-child(2) a{
+    background-position: -116px 0px;
+}
+.about-icon li:nth-child(3) a{
+    background-position: -232px 0px;
+}
+.about span{
+    display: block;
+    padding-top: 130px;
+    font-size: 22px;
+    font-weight: bold;
 }

@@ -1,3 +1,105 @@
 .business{
-    color: green;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f8f8f8;
+}
+/* 비즈니스 상단 */
+.business-top{
+    text-align: center;
+}
+.business-title{
+    font-size: 44px;
+    position: relative;
+    padding-bottom: 22px;
+}
+.business-title::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 37px;
+    height: 4px;
+    background-color: #ff0000;
+}
+.bussiness-desc{
+    margin-top: 25px;
+    color: #444;
+}
+/* 비즈니스 하단 */
+.business-list{
+    width: 100%;
+    height: 420px;
+    margin-top: 50px;
+    display: flex;
+}
+.business-list >li{
+    width: calc(100% / 5);
+}
+.business-list >li> a{
+    display: block;
+}
+.img-area{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    background: url(../img/img_business.png) no-repeat;
+}
+.business-list li:nth-child(1) .img-area{
+    background-position: 0px 0px;
+}
+.business-list li:nth-child(2) .img-area{
+    background-position: -240px 0px;
+}
+.business-list li:nth-child(3) .img-area{
+    background-position: -480px 0px;
+}
+.business-list li:nth-child(4) .img-area{
+    background-position: -720px 0px;
+}
+.business-list li:nth-child(5) .img-area{
+    background-position: -960px 0px;
+}
+.img-area .txt{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 98px;
+}
+/* 호버했을 때 나오는 리스트 */
+.hover-area{
+    width: 240px;
+    height: 420px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.hover-area:hover{
+    opacity: 1;
+    background-color: #ff7d26;
+}
+.icon{
+    width: 130px;
+    height: 112px;
+    background: url(../img/bg_common.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.business-list li:nth-child(1) .icon{
+    background-position: -168px 0;
+}
+.business-list li:nth-child(2) .icon{
+    background-position: -298px 0;
+}
+.business-list li:nth-child(3) .icon{
+    background-position: 0px -122px;
+}
+.business-list li:nth-child(4) .icon{
+    background-position: -139px -122px;
+}
+.business-list li:nth-child(5) .icon{
+    background-position: -269px -122px;
 }
