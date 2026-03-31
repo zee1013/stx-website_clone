@@ -1,6 +1,7 @@
 /* 폰트 적용 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Orbitron:wght@400..900&family=Poiret+One&display=swap');
 /* css연결 링크 */
+@import url("modal.css");
 @import url("header.css");
 @import url("visual.css");
 @import url("business.css");
@@ -21,6 +22,9 @@ a{
     text-decoration: none;
     color: #333;
     /* display: block; */
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-family: "Noto Sans Kr" , sans-serif;

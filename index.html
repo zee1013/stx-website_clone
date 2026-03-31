@@ -41,13 +41,30 @@
     <meta property="og:description" content="STX건설 웹사이트입니다." />
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- 자바스크립트 연결 -->
+     <script src="js/main.js"></script>
+     <script src="js/modal.js"></script>
     <title>남선알미늄 건설사업부문</title>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
+      <!-- 퀵버튼 -->
+       <div class="quick">
+        <!-- help -->
+         <a href="#" id="chat">
+          <img src="img/person.png" alt="chat">
+          <span>무엇을 도와드릴까요?</span>
+         </a>
+         <!-- shop -->
+          <a href="#" id="shop">stx</a>
+          <!-- go top -->
+          <a href="#" id="gotop">↑</a>
+       </div>
       <!-- 상단 -->
       <header class="header">
+        <!-- 헤더 백그라운드 -->
+         <div class="header-bg"></div>
         <div class="header-inner">
           <!-- 로고 -->
           <a href="#" class="logo">
@@ -57,7 +74,7 @@
           <nav class="nav">
             <ul class="gnb">
               <li>
-                <a href="#">회사소개</a>
+                <a href="#" class="aboutMenu">회사소개</a>
                 <ul class="depth2">
                   <li><a href="#">인사말</a></li>
                   <li><a href="#">STX건설</a></li>
@@ -70,7 +87,7 @@
                 </ul>
               </li>
               <li>
-                <a href="#">사업분야</a>
+                <a href="#business">사업분야</a>
                 <ul class="depth2">
                   <li><a href="#">건축사업</a></li>
                   <li><a href="#">주택사업</a></li>
@@ -132,11 +149,11 @@
             STX Engineering & Construction
           </h1>
           <p class="visual-txt">세계최고를 향해 STX건설이 힘차게 질주합니다!</p>
-          <a href="#"><button class="visual-btn">버튼</button></a>
+          <a href="#news"><button class="visual-btn">버튼</button></a>
         </div>
       </section>
       <!-- 비즈니스 -->
-      <section class="business">
+      <section class="business" id="business">
         <div class="business-inner inner">
           <!-- 비지니스 상단 -->
           <div class="business-top">
@@ -152,7 +169,7 @@
           </div>
           <!-- 비지니스 하단 -->
            <div class="business-bottom">
-            <ul class="business-list">
+            <ul class="business-list"  >
               <li>
                 <a href="#">
                   <div class="img-area">
@@ -213,7 +230,7 @@
         </div>
       </section>
       <!-- 뉴스 -->
-      <section class="news">
+      <section class="news" id="news">
         <!-- 배경색 넣기 -->
          <div class="news-bg"></div>
           <div class="news-inner inner">
@@ -225,29 +242,24 @@
                 <li>
                   <a href="#"
                     ><span class="news-txt"
-                      >회사분할에 따른 주권제출 및 채권자 이의제출공고</span
-                    ></a
-                  >
+                      >회사분할에 따른 주권제출 및 채권자 이의제출공고</span></a>
                 </li>
                 <li>
-                  <a href="#"
-                    ><span class="news-txt"
+                  <a href="#">
+                    <span class="news-txt"
                       >에스티엑스건설자산관리 주식회사 해산결의에 따른
-                      채권신고</span
-                    ></a
-                  >
+                      채권신고</span>
+                    </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="news-txt"
+                      >제20기 정기주주총회 개최의 건</span>
+                    </a>
                 </li>
                 <li>
                   <a href="#"
-                    ><span class="news-txt"
-                      >제20기 정기주주총회 개최의 건</span
-                    ></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="news-txt">분할계획서 변경공고</span></a
-                  >
+                    ><span class="news-txt">분할계획서 변경공고</span></a>
                 </li>
               </ul>
             </div>
@@ -311,7 +323,7 @@
         </div>
       </section>
       <!-- 회사소개 -->
-      <section class="about">
+      <section class="about" id="about-us">
         <div class="about-inner inner">
           <!-- 회사소개 상단 -->
            <div class="about-top">
@@ -356,7 +368,24 @@
         </div>
       </section>
       <!-- 하단 -->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer-inner inner">
+          <div class="footer-wrap">
+            <div class="footer-logo">
+              <img src="img/logo_footer.png" alt="footer-logo">
+            </div>
+            <div class="footer-txt">
+              <address>
+                대구사무소 : (41590) 대구광역시 북구 원대로 128, 연우빌딩 7층 
+                TEL : 053-712-3100 · FAX : 053-712-3199
+              </address>
+              <p class="copy">
+                Copyright ⓒ NS CONSTRUCTION. LTD. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

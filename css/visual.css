@@ -5,6 +5,7 @@
     background: url(../img/img_visual01.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 80px;
 }
 .visual-inner{
     position: relative;
@@ -38,7 +39,7 @@
     background-position: -122px 0px;
     font-size: 0px;
     position: absolute;
-    bottom: -430px;
+    bottom: -360px;
     left: 50%;
     transform: translateX(-50%);
     padding-bottom: 30px;
